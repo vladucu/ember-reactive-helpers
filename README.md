@@ -1,4 +1,5 @@
-# ember-reactive-helpers
+ember-reactive-helpers
+==============================================================================
 
 [![Build Status](https://travis-ci.org/EmberSherpa/ember-reactive-helpers.svg)](https://travis-ci.org/EmberSherpa/ember-reactive-helpers)
 [![npm version](https://badge.fury.io/js/ember-reactive-helpers.svg)](http://badge.fury.io/js/ember-reactive-helpers)
@@ -6,13 +7,15 @@
 
 Collection of helpers to aid in reactive template programming with Ember.js.
 
-## Introduction
+Introduction
+------------------------------------------------------------------------------
 
-Reactive helpers are helpers that return functions. These functions can be bound to event handlers 
+Reactive helpers are helpers that return functions. These functions can be bound to event handlers
 to process data on the way up in the Data Down Actions Up cycle. The `r` helper makes it possible to use
 [`ember-composable-helpers`](https://github.com/DockYard/ember-composable-helpers) in event handlers where execution of the helper is delayed until the event is triggered.
 
-## Helpers
+Helpers
+------------------------------------------------------------------------------
 
 ### `(r helper [arg1 arg2 ...])`
 
@@ -73,11 +76,11 @@ that's passed into the helper.
 
 ### `(r/tap value)`
 
-`(r/tap value)` helper will evaluate to a function that will return the passed in argument. 
+`(r/tap value)` helper will evaluate to a function that will return the passed in argument.
 
 ### `{{shhh anything}}`
 
-`{{shhh` helper will supress any output that's passed into it. This is useful when you want to compute a helper 
+`{{shhh` helper will supress any output that's passed into it. This is useful when you want to compute a helper
 without having its output rendered.
 
 ### `(transition-to 'destination' model (query-params foo='bar'))`
@@ -88,19 +91,33 @@ without having its output rendered.
 <button {{action (transition-to 'index')}}>Go to Index</button>
 ```
 
-## Installation
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v2.18 or above
+* Ember CLI v2.13 or above
+
+
+Installation
+------------------------------------------------------------------------------
 
 ```
 ember install ember-reactive-helpers
 ```
 
-## Helpful Links
+Helpful Links
+------------------------------------------------------------------------------
 
 - ### [Live Demo](http://EmberSherpa.github.io/ember-reactive-helpers)
 
 - ### [Changelog](CHANGELOG.md)
 
-## Looking for help?
+Looking for help?
+------------------------------------------------------------------------------
+
 If you encounter a bug [please open an issue on GitHub](http://github.com/EmberSherpa/ember-reactive-helpers/issues).
 
-## Usage
+License
+------------------------------------------------------------------------------
+
+This project is licensed under the [MIT License](LICENSE.md).
